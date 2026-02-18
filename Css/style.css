@@ -1,0 +1,180 @@
+/* variables */
+
+/* global code */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: url(/Images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    background-position: -0 -50px;
+    width: 100%;
+}
+@media (min-width : 767px)
+{
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width : 992px)
+{
+    .container {
+        width: 978px;
+    }
+}
+@media (min-width : 1200px)
+{
+    .container {
+        width: 1187px;
+    }
+}
+
+/* container */
+.design .container {
+    margin: 50px auto;
+    background-color: white;
+    width: 450px;
+    border-radius: 20px;
+    min-height: 630px;
+}
+.design .container .image img {
+    border-radius:  20px 20px 0px 0px;
+}
+.design .container .text {
+    margin-top: 30px;
+    text-align: center;
+    width: 80%;
+    margin-left: 50px;
+}
+.design .container .text h3 {
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: hsl(223, 47%, 23%);
+}
+.design .container .text p {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%) ;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.design .container .content {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.design .container .content  .card {
+    background-color: hsl(225, 100%, 98%);
+    width: 95%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    margin-left: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+.design .container .content .card p {
+    width: 100px;
+    margin-left: -80px;
+    color: hsl(223, 47%, 23%);
+    line-height: 1.6;
+}
+.design .container .content  .card span:first-child {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+.design .container .content .card a {
+    color: blueviolet;
+}
+.design .container .content .card a:hover {
+    text-decoration: none;
+}
+.design .container .content .button-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 10px;
+}
+.design .container .content .button-content input {
+    border: 0px solid transparent;
+    background-color: white;
+    color: hsl(224, 23%, 55%) ;
+}
+.design .container .content .button-content .special-input {
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 500;
+    border: 1px solid transparent;
+    text-align: center;
+    box-shadow: 0 10px 10px 10px hsl(225, 100%, 94%);
+}
+.design .container .content .button-content .special-input:hover {
+    background-color: hsl(244.51deg 82.61% 68.43%);
+}
+/* mobile web */
+@media (max-width:767px)
+{
+    
+
+    .design .container {
+        width: 300px;
+        min-height: 580px;
+        margin-top:100px ;
+    }
+    .design .container .image img {
+        width: 300px;
+    }
+    .design .container .content {       
+        text-align: center;
+        padding-left:10px ;
+        padding-right: 10px;
+    }
+        .design .container .text {
+            margin: 30px auto;
+            width: 100%;
+        }
+    .design .container .text h3 {
+        font-weight: 800;
+        font-size: 20px;
+        width: 100%;
+        
+    }
+
+    .design .container .text span {
+        padding-left: 3px;
+    }
+    .design .container .content .button-content .special-input {
+        padding-bottom: 15px;
+        padding-top: 15px;
+        font-weight: 700;
+    }
+    .design .container .content .card {
+        display: grid;
+        grid-template-columns: repeat(auto-fill , minmax(30px ,1fr));
+        gap: 45px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .design .container .content  .card p {
+        font-size: 15px;
+        margin-left: -35px;
+    }
+     .design .container .content  .card span:first-child {
+        color:  hsl(223, 47%, 23%);
+        font-weight: 900;
+     }
+     .design .container .content  .card span:last-child{
+        color: hsl(224, 23%, 55%);
+     }
+
+}
